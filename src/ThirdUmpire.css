@@ -1,0 +1,100 @@
+/* Container styling */
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* Make the container a single column */
+  grid-template-rows: 15% 30% 30% 10% 15%; /* Set the height of each row */
+  gap: 1px;
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+}
+
+/* Section styling */
+.section {
+  border: 1px solid #ddd; /* Lighter border color for sections */
+  background-color: #f9f9f9; /* Light background color */
+  margin-bottom: 1px; /* Add margin between sections */
+}
+
+/* Section content */
+.section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding to section content */
+}
+
+/* Label styling */
+.label {
+  font-weight: bold;
+  color: #333; /* Darker text color */
+}
+
+/* Counter button styling */
+.counter button {
+  background-color: #007bff; /* Blue color for buttons */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+/* Overs, total runs, balls styling */
+.overs, .total-runs, .balls {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* Reset button styling */
+.reset-button {
+  background-color: #dc3545; /* Red color for reset button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition for button hover effect */
+  align-items: center;
+}
+
+.reset-button:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
+.section.reset-section {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Section content styling */
+.section-content.runs-content {
+  display: flex;
+  flex-direction: row; /* Set the flex direction to row */
+  align-items: center;
+}
+
+/* Runs button styling */
+.runs-button {
+  width: 40px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #dc3545; /* Red color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px; /* Add margin between buttons */
+  transition: background-color 0.3s; /* Smooth transition for button hover effect */
+}
+
+.runs-button:hover {
+  background-color: #c82333; /* Darker red color on hover */
+}
+
